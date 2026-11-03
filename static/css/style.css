@@ -62,17 +62,13 @@ a { color: inherit; }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
 
-@font-face { font-family: "Space Grotesk"; font-weight: 500; font-display: swap; src: url(../fonts/space-grotesk-latin-ext-500-normal.woff2) format("woff2"); unicode-range: U+0100-02BA,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF; }
-@font-face { font-family: "Space Grotesk"; font-weight: 500; font-display: swap; src: url(../fonts/space-grotesk-latin-500-normal.woff2) format("woff2"); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
-@font-face { font-family: "Space Grotesk"; font-weight: 700; font-display: swap; src: url(../fonts/space-grotesk-latin-ext-700-normal.woff2) format("woff2"); unicode-range: U+0100-02BA,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF; }
-@font-face { font-family: "Space Grotesk"; font-weight: 700; font-display: swap; src: url(../fonts/space-grotesk-latin-700-normal.woff2) format("woff2"); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
 @font-face { font-family: "Inter"; font-weight: 400; font-display: swap; src: url(../fonts/inter-latin-ext-400-normal.woff2) format("woff2"); unicode-range: U+0100-02BA,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF; }
 @font-face { font-family: "Inter"; font-weight: 400; font-display: swap; src: url(../fonts/inter-latin-400-normal.woff2) format("woff2"); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
 @font-face { font-family: "Inter"; font-weight: 700; font-display: swap; src: url(../fonts/inter-latin-ext-700-normal.woff2) format("woff2"); unicode-range: U+0100-02BA,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF; }
 @font-face { font-family: "Inter"; font-weight: 700; font-display: swap; src: url(../fonts/inter-latin-700-normal.woff2) format("woff2"); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
 
 :root { --bg:#fff; --text:#17213b; --muted:#56607a; --accent:#e2231a; --accent-text:#fff; --line:#dde2ec; --navy:#0e1b3d; --soft:#f3f5fa;
-  --font-body:"Inter",system-ui,sans-serif; --font-head:"Space Grotesk","Inter",system-ui,sans-serif; --wrap:74rem; }
+  --font-body:"Inter",system-ui,sans-serif; --font-head:"Inter",system-ui,sans-serif; --wrap:74rem; }
 h1,h2,h3 { font-weight:700; letter-spacing:-.02em; color:var(--navy); }
 h1 { font-size:var(--step-4); } h2 { font-size:var(--step-3); margin-bottom:var(--space-3); } h3 { font-size:var(--step-1); }
 .sekce { padding-block:var(--space-5) var(--space-5); }
@@ -82,7 +78,7 @@ h1 { font-size:var(--step-4); } h2 { font-size:var(--step-3); margin-bottom:var(
 .podnadpis { color:var(--muted); max-width:44rem; margin-bottom:var(--space-4); }
 .hlavicka { position:sticky; top:0; z-index:50; background:#fff; border-bottom:1px solid var(--line); }
 .hlavicka .wrap { display:flex; align-items:center; justify-content:space-between; gap:var(--space-3); min-height:4.5rem; flex-wrap:wrap; }
-.logo img { height:38px; width:auto; }
+.logo { display:inline-flex; align-items:center; min-height:48px; } .logo img { height:40px; width:auto; }
 .hlavicka nav { display:flex; flex-wrap:wrap; gap:.25rem 1.1rem; font-size:var(--step--1); font-weight:700; }
 .hlavicka nav a { text-decoration:none; color:var(--navy); }
 .hlavicka nav a:hover { color:var(--accent); }
