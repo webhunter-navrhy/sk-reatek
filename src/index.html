@@ -3,21 +3,13 @@
 {% set titulek = 'REATEK – inflatable advertising, attractions, playgrounds' %}
 {% set cesta = '' %}
 {% block obsah %}
-<section class="hero">
-  <div class="wrap hero-in">
-    <div class="hero-text">
-      <p class="stitek">Slovak manufacturer since 2008</p>
-      <h1>Inflatables and playgrounds that fill your venue.</h1>
-      <p class="uvod">Tailor-made inflatable advertising, professional attractions and indoor playgrounds for commercial use. Made in Europe, delivered with a 24–36 month warranty.</p>
-      <p class="tl-rada"><a class="tlacitko" href="{{ url('contact') }}">Request a quotation</a><a class="tlacitko druhe" href="#nabidka">See our products</a></p>
-    </div>
-    <div class="hero-foto">{{ img('hyundai.jpg', 'Branded dark blue inflatable X-tent at an automotive event', sizes='(min-width: 60rem) 38rem, 100vw') }}</div>
-  </div>
-  <div class="wrap cisla">
-    <div><b>2008</b><span>Almost 20 years in the EU market</span></div>
-    <div><b>1315</b><span>Delivered projects and still counting</span></div>
-    <div><b>36 mo.</b><span>Standard warranty, up to 48 on selected items</span></div>
-    <div><b>12–15</b><span>Working days to produce most inflatables</span></div>
+<section class="hero-full">
+  <div class="hero-bg">{{ img('vipsport.png', 'Inflatable pneumatic tent with branded furniture at an outdoor promotion', sizes='100vw', eager=True) }}</div>
+  <div class="wrap hero-full-in">
+    <p class="stitek">Slovak manufacturer since 2008</p>
+    <h1>Inflatables and playgrounds that fill your venue.</h1>
+    <p class="uvod">Tailor-made inflatable advertising, professional attractions and indoor playgrounds for commercial use. Made in Europe, with a 24–36 month warranty and 1315 delivered projects.</p>
+    <p class="tl-rada"><a class="tlacitko" href="{{ url('contact') }}">Request a quotation</a><a class="tlacitko druhe svetle-tl" href="#nabidka">See our products</a></p>
   </div>
 </section>
 
@@ -33,39 +25,46 @@
   </div>
 </section>
 
-<section class="sekce tmava">
-  <div class="wrap dva">
-    <div>
+<section class="pas-foto">
+  <div class="hero-bg">{{ img('jungle.png', 'Rendering of a jungle-themed indoor playground') }}</div>
+  <div class="wrap pas-in">
+    <div class="pas-text">
       <p class="stitek">Our story</p>
       <h2>From distributor to manufacturer</h2>
-      <p>Since our founding in 2008, REATEK has grown from a trusted supplier of inflatable products into a leading manufacturer of custom-built entertainment and advertising solutions. In 2010, we expanded into the indoor playground segment.</p>
+      <p>Since 2008, REATEK has grown from a trusted supplier of inflatable products into a leading manufacturer of custom-built entertainment and advertising solutions. In 2010, we expanded into indoor playgrounds.</p>
       <p>We operate across Europe and specialize in safety (EN 1176, EN 14960), professional design and tailored solutions for small and medium-sized enterprises.</p>
-      <p class="tl-rada"><a class="tlacitko druhe" href="{{ url('about-us') }}">About REATEK</a></p>
+      <p class="tl-rada"><a class="tlacitko druhe svetle-tl" href="{{ url('about-us') }}">About REATEK</a></p>
     </div>
-    <div>{{ img('jungle.png', 'Rendering of a jungle-themed indoor playground') }}</div>
   </div>
 </section>
 
 <section class="sekce">
-  <div class="wrap">
-    <h2>Why REATEK</h2>
-    <div class="vyhody">
-      <div><h3>Innovative design</h3><p>Original concepts and 3D visualisation before anything is produced.</p></div>
-      <div><h3>Premium quality</h3><p>Certified materials, double stitching and replaceable surfaces in high-wear areas.</p></div>
-      <div><h3>Fast delivery</h3><p>Inflatable advertising in 12–15 working days, playgrounds in 3–4 weeks.</p></div>
-      <div><h3>Long warranty</h3><p>24–36 months, with post-warranty service and a service department open six days a week.</p></div>
+  <div class="wrap dva proc">
+    <div>{{ img('park.png', 'Large indoor playground and trampoline park built by REATEK') }}</div>
+    <div>
+      <h2>Why REATEK</h2>
+      <ul class="body4" role="list">
+        <li><h3>Innovative design</h3><p>Original concepts and 3D visualisation before anything is produced.</p></li>
+        <li><h3>Premium quality</h3><p>Certified materials, double stitching and replaceable surfaces in high-wear areas.</p></li>
+        <li><h3>Fast delivery</h3><p>Inflatable advertising in 12–15 working days, playgrounds in 3–4 weeks.</p></li>
+        <li><h3>Long warranty</h3><p>24–36 months, with post-warranty service and a service department open six days a week.</p></li>
+      </ul>
     </div>
   </div>
 </section>
 
 <section class="sekce svetla">
-  <div class="wrap dva">
-    <div>{{ img('sporitelna.jpg', 'Inflatable slide branded for Česká spořitelna at a family event') }}</div>
-    <div>
-      <p class="stitek">References</p>
-      <h2>Brands that stand out</h2>
-      <p>From global brands and event agencies to municipalities, hotels and shopping centres: our products work as dynamic advertising tools and a visual signature for your brand.</p>
-      <p>No extra fees for colour changes or adding your logo.</p>
+  <div class="wrap">
+    <p class="stitek">References</p>
+    <h2>Brands that stand out</h2>
+    <p class="podnadpis">From global brands and event agencies to municipalities, hotels and shopping centres: our products work as dynamic advertising tools. No extra fees for colour changes or adding your logo.</p>
+    <div class="mozaika">
+      <figure class="velka">{{ img('sporitelna.jpg', 'Inflatable slide branded for Česká spořitelna at a family event') }}<figcaption>Česká spořitelna</figcaption></figure>
+      <figure>{{ img('hyundai.jpg', 'Branded dark blue inflatable X-tent at an automotive event') }}<figcaption>Hyundai</figcaption></figure>
+      <figure>{{ img('xtent.png', 'Custom printed inflatable X-tent') }}<figcaption>X-tent</figcaption></figure>
+      <figure>{{ img('arch.jpg', 'Inflatable advertising arch') }}<figcaption>Advertising arch</figcaption></figure>
+      <figure>{{ img('att-combo.jpg', 'Inflatable combo with slide') }}<figcaption>Attraction combo</figcaption></figure>
+      <figure>{{ img('tramp-park.jpg', 'Trampoline park') }}<figcaption>Trampoline park</figcaption></figure>
     </div>
   </div>
 </section>

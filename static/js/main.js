@@ -19,3 +19,12 @@
     });
   });
 })();
+
+(function () {
+  var b = document.querySelector('.burger'), n = document.getElementById('hl-nav');
+  if (!b || !n) return;
+  b.addEventListener('click', function () {
+    var o = n.classList.toggle('otevrene');
+    b.setAttribute('aria-expanded', o ? 'true' : 'false');
+  });
+})();

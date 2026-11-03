@@ -26,7 +26,8 @@
 <header class="hlavicka">
   <div class="wrap">
     <a href="{{ url('') }}" class="logo">{% if site.logo %}<img src="{{ base }}{{ site.logo }}" alt="{{ site.nazev }}" height="40">{% else %}{{ site.nazev }}{% endif %}</a>
-    <nav aria-label="Main">
+    <button class="burger" type="button" aria-expanded="false" aria-controls="hl-nav"><span class="sr-only">Menu</span><i></i><i></i><i></i></button>
+    <nav aria-label="Main" id="hl-nav">
       {% for n in site.nav %}<a href="{{ n.href if n.href.startswith(('#', 'http', 'tel:', 'mailto:')) else url(n.href) }}">{{ n.text }}</a> {% endfor %}
     </nav>
   </div>
