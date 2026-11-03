@@ -169,3 +169,12 @@ h1 { font-size:var(--step-4); } h2 { font-size:var(--step-3); margin-bottom:var(
   .hlavicka nav a { min-height:48px; border-bottom:1px solid var(--line); }
   .hero-full::before, .pas-foto::before { background:linear-gradient(180deg,rgba(10,20,50,.75),rgba(10,20,50,.85)); }
 }
+
+/* kolo 3 */
+.tlacitko.druhe.svetle-tl { background:transparent; color:#fff; border:1.5px solid rgba(255,255,255,.85); }
+.tlacitko.druhe.svetle-tl:hover { background:#fff; color:var(--navy); }
+.tl-quote { display:inline-flex; align-items:center; min-height:44px; padding:0 1.1rem; background:var(--accent); color:#fff; font-weight:700; font-size:var(--step--1); border-radius:.5rem; text-decoration:none; order:3; }
+.tl-quote:hover { background:var(--navy); color:#fff; }
+@media (min-width:48rem) { .mozaika { grid-template-columns:repeat(4,1fr); } .mozaika .velka { grid-column:span 2; grid-row:span 2; } }
+@media (min-width:51.3rem) { .hlavicka .wrap { flex-wrap:nowrap; } .hlavicka nav { margin-left:auto; } }
+@media (max-width:51.25rem) { .tl-quote { margin-left:auto; } .burger { order:4; } .hlavicka nav { order:5; } }
