@@ -1,0 +1,15 @@
+{% extends "_base.html" %}
+{% set titulek = 'Contact REATEK – Bratislava, Trenčín, Prague' %}
+{% set popis = 'Contact REATEK: headquarters in Bratislava, warehouse and shop in Trenčín, office in Prague. Send us your requirements.' %}
+{% set cesta = 'contact/' %}
+{% block obsah %}
+<section class="hero-str"><div class="wrap"><div class="hero-str-text"><p class="stitek">Contact</p><h1>Send us your requirements</h1><p class="uvod">For pricing, production and design consultations write to us or call. We reply quickly.</p></div></div></section>
+<section class="sekce"><div class="wrap dva">
+  <div>{% include "_formular.html" %}</div>
+  <div class="adresy">
+    <div><h3>Headquarters</h3><p>REATEK EUROPE, SE<br>Klincova 37, 821 08 Bratislava, Slovakia<br>Mon–Fri 9am–5pm</p><p><a href="mailto:info@reatek.eu">info@reatek.eu</a></p></div>
+    <div><h3>Warehouse and shop</h3><p>GroupReatek, s.r.o.<br>gen. M. R. Štefánika 12, 911 01 Trenčín, Slovakia<br>Mon–Fri 9am–9pm · Sat 9am–1pm</p><p><a href="mailto:sales@reatek.eu">sales@reatek.eu</a></p></div>
+    <div><h3>Prague office</h3><p>REATEK CZ, s.r.o.<br>Roháčova 14, 130 00 Prague, Czech Republic<br>Mon–Fri 9am–5pm</p><p><a href="mailto:praque@reatek.eu">praque@reatek.eu</a></p></div>
+  </div>
+</div></section>
+{% endblock %}

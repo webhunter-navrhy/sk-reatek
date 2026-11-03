@@ -1,0 +1,55 @@
+{
+  "slug": "sk-reatek",
+  "nazev": "REATEK EUROPE",
+  "url": "https://webhunter-navrhy.github.io/sk-reatek/",
+  "base": "/sk-reatek/",
+  "lang": "en",
+  "popis": "Slovak manufacturer of custom inflatable advertising, pneumatic tents, professional inflatable attractions and indoor playgrounds. Since 2008, delivered across Europe.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "hyundai.jpg",
+  "logo": "logo.png",
+  "theme_color": "#0e1b3d",
+  "typ": "LocalBusiness",
+  "ico": "47653213",
+  "kontakt": {
+    "email": "info@reatek.eu",
+    "telefon": "+421 918 986 319",
+    "adresa": {
+      "ulice": "Klincova 37",
+      "psc": "821 08",
+      "mesto": "Bratislava",
+      "zeme": "SK"
+    }
+  },
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Inquiry from reatek.eu"
+  },
+  "nav": [
+    {
+      "text": "Pneumatic structures",
+      "href": "pneumatic-structures"
+    },
+    {
+      "text": "Indoor playgrounds",
+      "href": "indoor-playgrounds"
+    },
+    {
+      "text": "Attractions",
+      "href": "inflatable-attractions"
+    },
+    {
+      "text": "About us",
+      "href": "about-us"
+    },
+    {
+      "text": "Contact",
+      "href": "contact"
+    }
+  ]
+}

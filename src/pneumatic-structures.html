@@ -1,0 +1,29 @@
+{% extends "_base.html" %}
+{% import "_makra.html" as m %}
+{% set titulek = 'Inflatable pneumatic structures – tents, arches, totems | REATEK' %}
+{% set popis = 'Custom inflatable pneumatic tents, event furniture, arches and totems with your branding. Produced in 12–15 working days, 36-month warranty.' %}
+{% set cesta = 'pneumatic-structures/' %}
+{% block obsah %}
+{{ m.hlavicka('Pneumatic structures', 'Custom inflatable pneumatic structures', 'Tents in four shapes, event furniture, arches and totems. Versatile, durable and quick to set up, a popular choice in the inflatable advertising sector.', 'vipsport.png', 'Inflatable pneumatic tent with branded furniture at an outdoor event') }}
+<section class="sekce">
+  <div class="wrap dva">
+    <div>
+      <h2>Made for marketing impact</h2>
+      <p>Our extensive experience and long-term partnerships with SMEs, manufacturers, event and advertising agencies, hotels, sports venues, cafés, shopping centres and associations have helped us perfect our products for marketing impact and long-term performance.</p>
+      <p>We can produce any product within 12–15 working days and deliver it via DHL Euroconnect directly to your destination. Your branded product comes with a certificate and a 36-month warranty.</p>
+    </div>
+    <div><h3>Key benefits</h3>{{ m.seznam(['Professional brand presentation','Enhanced company reputation','Targeted customer engagement','Strategic marketing investment','Cost-effective promotional tools']) }}</div>
+  </div>
+</section>
+<section class="sekce svetla">
+  <div class="wrap">
+    <h2>The pneumatic range</h2>
+    <div class="divize dlazdice">
+      <a class="karta" href="{{ url('x-tents') }}">{{ img('xtent.png', 'Inflatable X-shaped tent render') }}<div><h3>X-tents</h3><p>Fast setup, inflates in 5–10 minutes.</p><span class="vice">Details</span></div></a>
+      <a class="karta" href="{{ url('contact') }}">{{ img('hyundai.jpg', 'Hyundai branded inflatable tent') }}<div><h3>V-, U- and N-tents</h3><p>Four unique shapes for any event.</p><span class="vice">Ask for details</span></div></a>
+      <a class="karta" href="{{ url('contact') }}">{{ img('arch.jpg', 'Inflatable advertising arch') }}<div><h3>Arches, furniture, totems</h3><p>Complete your brand presence on site.</p><span class="vice">Ask for details</span></div></a>
+    </div>
+  </div>
+</section>
+{{ m.vyzva('Contact us for the catalogue or our full portfolio.') }}
+{% endblock %}

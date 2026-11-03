@@ -1,0 +1,18 @@
+{% extends "_base.html" %}
+{% import "_makra.html" as m %}
+{% set titulek = 'Custom inflatable slides | REATEK' %}
+{% set popis = 'Branded inflatable slides with your colours, logos and graphics. Delivered in 15–20 working days with Gibbons blower, repair kit and 36-month warranty.' %}
+{% set cesta = 'slides/' %}
+{% block obsah %}
+{{ m.hlavicka('Inflatable attractions · Slides', 'Custom slides, designed to stand out', 'A powerful way to attract attention and create unforgettable experiences at marketing events, parties and family venues.', 'park.png', 'Large inflatable slide with branding') }}
+<section class="sekce">
+  <div class="wrap dva">
+    <div>
+      <h2>We bring your vision to life</h2>
+      {{ m.seznam(['3D design and cutting patterns based on your concept','Full customization with colours, logos, banners and advertising graphics','Production and delivery within 15–20 working days','Gibbons electric blower (UK-made), transport bag, repair kit, manual, certificate and 36-month warranty','Optional velcro banners or removable logos']) }}
+    </div>
+    <div><p>Since 2008 REATEK has delivered inflatables that meet the EN 14960 safety standard. Our slides are built from high-strength, flame-resistant and UV-tested materials for long-term durability and child safety.</p>{{ img('sporitelna.jpg', 'Branded inflatable slide at an outdoor event') }}</div>
+  </div>
+</section>
+{{ m.vyzva('Let us create your inflatable slide.') }}
+{% endblock %}

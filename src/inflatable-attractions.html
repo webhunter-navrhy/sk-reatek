@@ -1,0 +1,33 @@
+{% extends "_base.html" %}
+{% import "_makra.html" as m %}
+{% set titulek = 'Professional inflatable attractions | REATEK' %}
+{% set popis = 'Custom bouncy castles, slides, combos, obstacle courses and sports inflatables. TÜV-certified (EN 14960), 36-month warranty, no fee for logo or colour changes.' %}
+{% set cesta = 'inflatable-attractions/' %}
+{% block obsah %}
+{{ m.hlavicka('Inflatable attractions', 'Designed to captivate, built to perform', 'Custom-made inflatables that combine visual impact, safety and commercial value, in any shape or size based on your concept.', 'att-castle.jpg', 'Colourful inflatable castle and slide on a lawn') }}
+<section class="sekce">
+  <div class="wrap dva">
+    <div>
+      <h2>Why choose REATEK attractions</h2>
+      {{ m.seznam(['High-quality original designs with guaranteed best pricing','No extra fees for colour changes or adding your logo','Delivered with Gibbons Fans blowers from a UK manufacturer','Standard 36-month warranty, up to 48 months on selected items','Fast production: 12–15 working days for most products','Warranty service, repair kit and service department six days a week']) }}
+    </div>
+    <div>
+      <p>Our inflatables are widely recognised across Central Europe for their quality, fast delivery and TÜV-certified safety (EN 14960). Most users are children, so we prioritize safety: DIN-compliant materials, flame resistance, tear strength, mesh panels and roof shades.</p>
+      <p>Our team includes specialists with over 30 years of experience, from small businesses to global brands, event agencies and municipalities.</p>
+    </div>
+  </div>
+</section>
+<section class="sekce svetla">
+  <div class="wrap">
+    <h2>Attractions in the field</h2>
+    <div class="galerie">
+      {{ img('att-dart.jpg', 'Giant inflatable dartboard at a town event') }}
+      {{ img('att-football.jpg', 'Inflatable football pool with players') }}
+      {{ img('att-combo.jpg', 'Colourful inflatable combo with themed artwork') }}
+      {{ img('park.png', 'Large inflatable slide in an urban area') }}
+    </div>
+    <p class="tl-rada"><a class="tlacitko" href="{{ url('slides') }}">Custom slides</a></p>
+  </div>
+</section>
+{{ m.vyzva('Contact us for a catalogue or a quotation.') }}
+{% endblock %}

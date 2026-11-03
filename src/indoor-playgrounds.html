@@ -1,0 +1,52 @@
+{% extends "_base.html" %}
+{% import "_makra.html" as m %}
+{% set titulek = 'Indoor playgrounds and trampoline parks | REATEK' %}
+{% set popis = 'Custom indoor playgrounds since 2010. EN 1176-certified components, 3D design, installation and annual maintenance across Europe.' %}
+{% set cesta = 'indoor-playgrounds/' %}
+{% block obsah %}
+{{ m.hlavicka('Indoor playgrounds', 'Tailored play spaces since 2010', 'We specialize in the production and installation of safe, certified play areas tailored to your space, audience and business goals.', 'pg-1.jpg', 'Colourful indoor playground with climbing tower, slide and soft floor') }}
+<section class="sekce">
+  <div class="wrap dva">
+    <div>
+      <h2>Built with EN 1176-certified components</h2>
+      <p>Each project combines durable materials, vibrant design and a wide range of play elements such as slides, ball pools, climbing towers, swings, tunnels and interactive zones. From a family corner in a café to a full-scale entertainment zone, our solutions are scalable and built to last.</p>
+      <p>All components are manufactured within 3–4 weeks and delivered to your location. Every product comes with full certification and a 24–36 month warranty.</p>
+    </div>
+    <div><h3>Our services include</h3>{{ m.seznam(['Consultation to find the best solution for your space','Custom product design tailored to your brand and layout','3D visualization of the proposed playground','Personalized colour schemes and thematic styling','Transportation and on-site installation','Certification, documentation and safety checks','Ongoing inspections and annual maintenance']) }}</div>
+  </div>
+</section>
+<section class="sekce svetla">
+  <div class="wrap">
+    <h2>Playgrounds in the field</h2>
+    <div class="galerie">
+      {{ img('pg-tiger.jpg', 'Jungle-themed playground with tiger and giraffe artwork') }}
+      {{ img('pg-slide.jpg', 'Playground slide and soft foam tunnel') }}
+      {{ img('pg-ball.jpg', 'Ball pool with colourful climbing frame') }}
+      {{ img('pg-green.jpg', 'Green and brown playground with trampoline floor') }}
+    </div>
+  </div>
+</section>
+<section class="sekce">
+  <div class="wrap dva">
+    <div>
+      <p class="stitek">Trampolines</p>
+      <h2>Indoor and outdoor trampoline parks</h2>
+      <p>Since 2017 we deliver modern trampoline systems with fast production (4–5 weeks), premium materials and TÜV-certified safety. Custom themes, modular sizing and installation in 1–2 days.</p>
+      <p class="tl-rada"><a class="tlacitko" href="{{ url('trampoline-park') }}">Trampoline parks</a></p>
+    </div>
+    <div>{{ img('tramp-park.jpg', 'Indoor trampoline park with neon lighting') }}</div>
+  </div>
+</section>
+<section class="sekce tmava">
+  <div class="wrap">
+    <h2>Who our playgrounds are for</h2>
+    <div class="vyhody">
+      <div><h3>Restaurants and cafés</h3><p>More family visits and longer stays.</p></div>
+      <div><h3>Hotels</h3><p>Higher occupancy with kid-friendly amenities.</p></div>
+      <div><h3>Malls and business centres</h3><p>Family zones that lift foot traffic.</p></div>
+      <div><h3>Fitness and entertainment</h3><p>Play areas that bring parents back.</p></div>
+    </div>
+  </div>
+</section>
+{{ m.vyzva('Receive a custom-designed indoor playground that reflects your brand.') }}
+{% endblock %}

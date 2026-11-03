@@ -1,0 +1,18 @@
+{% extends "_base.html" %}
+{% import "_makra.html" as m %}
+{% set titulek = 'Indoor and outdoor trampolines | REATEK' %}
+{% set popis = 'Custom indoor and exterior trampoline parks: TÜV-certified, EN 1176, produced in 4–5 weeks, installed in 1–2 days.' %}
+{% set cesta = 'trampoline-park/' %}
+{% block obsah %}
+{{ m.hlavicka('Indoor playgrounds · Trampolines', 'High-energy fun for all ages', 'Trampoline centres are among the fastest-growing trends in the leisure industry. Fully customized to fit your space, brand and audience.', 'tramp-park.jpg', 'Indoor trampoline park with blue neon lights') }}
+<section class="sekce">
+  <div class="wrap dva">
+    <div>
+      <h2>Key features</h2>
+      {{ m.seznam(['Custom themes, colours and designs for your venue','TÜV-certified construction compliant with EN 1176:2008, SGS and DIN','Modular sizing and layout options','PVC-wrapped foam padding, 300 % stronger than standard materials','5 cm soft floor mats for enhanced safety','Trampolines can be relocated within one day without damage','Certified installation in 1–2 days and after-sales service']) }}
+    </div>
+    <div><h2>Applications</h2>{{ m.seznam(['Foam pit trampolines','Basketball trampolines','Dodgeball trampolines','Dance and aerobics trampolines','Fitness trampolines','Acrobatic and obstacle course trampolines','Toddler trampolines','Exterior trampolines']) }}</div>
+  </div>
+</section>
+{{ m.vyzva('Plan your trampoline arena with us.') }}
+{% endblock %}

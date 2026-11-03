@@ -1,0 +1,17 @@
+{% macro hlavicka(stitek, nadpis, uvod, foto, alt) %}
+<section class="hero-str">
+  <div class="wrap hero-str-in">
+    <div class="hero-str-text">
+      <p class="stitek">{{ stitek }}</p>
+      <h1>{{ nadpis }}</h1>
+      <p class="uvod">{{ uvod }}</p>
+      <p class="tl-rada"><a class="tlacitko" href="{{ url('contact') }}">Request a quotation</a><a class="tlacitko druhe" href="{{ url('contact') }}">Get the catalogue</a></p>
+    </div>
+    <div class="hero-str-foto">{{ img(foto, alt, sizes='(min-width: 60rem) 40rem, 100vw') }}</div>
+  </div>
+</section>
+{% endmacro %}
+{% macro vyzva(text) %}
+<section class="vyzva"><div class="wrap vyzva-in"><h2>{{ text }}</h2><p class="tl-rada"><a class="tlacitko" href="{{ url('contact') }}">Send us your requirements</a></p></div></section>
+{% endmacro %}
+{% macro seznam(polozky) %}<ul class="odrazky" role="list">{% for p in polozky %}<li>{{ p }}</li>{% endfor %}</ul>{% endmacro %}

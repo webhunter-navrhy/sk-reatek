@@ -1,0 +1,73 @@
+{% extends "_base.html" %}
+{% import "_makra.html" as m %}
+{% set titulek = 'REATEK – custom inflatable advertising, attractions and indoor playgrounds' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-text">
+      <p class="stitek">Slovak manufacturer since 2008</p>
+      <h1>Inflatables and playgrounds that fill your venue.</h1>
+      <p class="uvod">Tailor-made inflatable advertising, professional attractions and indoor playgrounds for commercial use. Made in Europe, delivered with a 24–36 month warranty.</p>
+      <p class="tl-rada"><a class="tlacitko" href="{{ url('contact') }}">Request a quotation</a><a class="tlacitko druhe" href="#nabidka">See our products</a></p>
+    </div>
+    <div class="hero-foto">{{ img('hyundai.jpg', 'Branded dark blue inflatable X-tent at an automotive event', sizes='(min-width: 60rem) 38rem, 100vw') }}</div>
+  </div>
+  <div class="wrap cisla">
+    <div><b>2008</b><span>Almost 20 years in the EU market</span></div>
+    <div><b>1315</b><span>Delivered projects and still counting</span></div>
+    <div><b>36 mo.</b><span>Standard warranty, up to 48 on selected items</span></div>
+    <div><b>12–15</b><span>Working days to produce most inflatables</span></div>
+  </div>
+</section>
+
+<section class="sekce" id="nabidka">
+  <div class="wrap">
+    <h2>Our product offer</h2>
+    <p class="podnadpis">Tailor-made inflatable advertising products, attractions and indoor playgrounds designed for commercial purposes.</p>
+    <div class="divize">
+      <a class="karta" href="{{ url('pneumatic-structures') }}">{{ img('vipsport.png', 'Inflatable pneumatic tent with furniture at an outdoor promotion') }}<div><h3>Pneumatic structures</h3><p>X-, V-, U- and N-tents, event furniture, arches and totems with your branding.</p><span class="vice">Explore</span></div></a>
+      <a class="karta" href="{{ url('indoor-playgrounds') }}">{{ img('pg-1.jpg', 'Colourful indoor playground with slides and climbing tower') }}<div><h3>Indoor playgrounds</h3><p>Custom, EN 1176-certified play spaces and trampoline parks for your venue.</p><span class="vice">Explore</span></div></a>
+      <a class="karta" href="{{ url('inflatable-attractions') }}">{{ img('att-castle.jpg', 'Inflatable bouncy castle with slide at a family event') }}<div><h3>Inflatable attractions</h3><p>Bouncy castles, slides, combos, obstacle courses and sports inflatables.</p><span class="vice">Explore</span></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="sekce tmava">
+  <div class="wrap dva">
+    <div>
+      <p class="stitek">Our story</p>
+      <h2>From distributor to manufacturer</h2>
+      <p>Since our founding in 2008, REATEK has grown from a trusted supplier of inflatable products into a leading manufacturer of custom-built entertainment and advertising solutions. In 2010, we expanded into the indoor playground segment.</p>
+      <p>We operate across Europe and specialize in safety (EN 1176, EN 14960), professional design and tailored solutions for small and medium-sized enterprises.</p>
+      <p class="tl-rada"><a class="tlacitko druhe" href="{{ url('about-us') }}">About REATEK</a></p>
+    </div>
+    <div>{{ img('jungle.png', 'Rendering of a jungle-themed indoor playground') }}</div>
+  </div>
+</section>
+
+<section class="sekce">
+  <div class="wrap">
+    <h2>Why REATEK</h2>
+    <div class="vyhody">
+      <div><h3>Innovative design</h3><p>Original concepts and 3D visualisation before anything is produced.</p></div>
+      <div><h3>Premium quality</h3><p>Certified materials, double stitching and replaceable surfaces in high-wear areas.</p></div>
+      <div><h3>Fast delivery</h3><p>Inflatable advertising in 12–15 working days, playgrounds in 3–4 weeks.</p></div>
+      <div><h3>Long warranty</h3><p>24–36 months, with post-warranty service and a service department open six days a week.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sekce svetla">
+  <div class="wrap dva">
+    <div>{{ img('sporitelna.jpg', 'Inflatable slide branded for Česká spořitelna at a family event') }}</div>
+    <div>
+      <p class="stitek">References</p>
+      <h2>Brands that stand out</h2>
+      <p>From global brands and event agencies to municipalities, hotels and shopping centres: our products work as dynamic advertising tools and a visual signature for your brand.</p>
+      <p>No extra fees for colour changes or adding your logo.</p>
+    </div>
+  </div>
+</section>
+{{ m.vyzva('Tell us what you need. We will design it.') }}
+{% endblock %}

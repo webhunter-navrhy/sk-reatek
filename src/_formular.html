@@ -1,0 +1,12 @@
+<form class="formular" method="post" data-endpoint="{{ site.formular.endpoint }}" data-demo="1">
+  <div class="dvojice">
+    <label>First name* <input name="jmeno" autocomplete="given-name" required></label>
+    <label>Last name <input name="prijmeni" autocomplete="family-name"></label>
+  </div>
+  <label>Email* <input name="email" type="email" autocomplete="email" required></label>
+  <label>Message* <textarea name="zprava" rows="5" required></textarea></label>
+  <div class="past" aria-hidden="true"><label>Leave empty <input name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+  <input type="hidden" name="_subject" value="{{ site.formular.predmet }}">
+  <button type="submit">Send inquiry</button>
+  <p class="formular-stav" role="status" aria-live="polite"></p>
+</form>

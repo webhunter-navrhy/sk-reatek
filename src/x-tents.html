@@ -1,0 +1,19 @@
+{% extends "_base.html" %}
+{% import "_makra.html" as m %}
+{% set titulek = 'Inflatable pneumatic X-tents | REATEK' %}
+{% set popis = 'Airtight X-shaped inflatable tents with sublimation printing. Inflate in 5–10 minutes, stay firm for over 30 days. Complete package incl. pump and suitcase.' %}
+{% set cesta = 'x-tents/' %}
+{% block obsah %}
+{{ m.hlavicka('Pneumatic structures · X-tents', 'Inflatable pneumatic tents – X shape', 'Airtight, sealed tents designed for fast setup, high mobility and long-lasting performance. Inflating in 5–10 minutes and staying firm for over 30 days.', 'xtent.png', 'X-shaped inflatable tent in a white render') }}
+<section class="sekce">
+  <div class="wrap dva">
+    <div>
+      <h2>Complete package for effortless installation</h2>
+      <p>Each tent is crafted from water-resistant, UV-protected, eco-friendly materials. Since 2015, our X-shaped tents have become a favourite for reliability, visual impact and ease of transport.</p>
+      {{ m.seznam(['Fully customizable canopy and side walls with sublimation printing','Three removable printed side walls with YKK zippers','Electric air pump (680 W, 220 V) for quick inflation','Manual pump included at no extra cost','Branded suitcase with wheels for easy transport','Anchoring accessories: ropes, stakes and sandbags','Installation manual, certification and a free front door']) }}
+    </div>
+    <div>{{ img('hyundai.jpg', 'Dark blue branded X-tent with sublimation print') }}</div>
+  </div>
+</section>
+{{ m.vyzva('Request a free 3D design of your tent.') }}
+{% endblock %}
